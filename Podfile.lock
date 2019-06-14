@@ -1,0 +1,125 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - BaiduMapAPI (2.8.1):
+    - BaiduMapAPI/Default (= 2.8.1)
+  - BaiduMapAPI/Default (2.8.1):
+    - BaiduMapAPI/Universal
+  - BaiduMapAPI/Universal (2.8.1)
+  - BPushSDK (1.4.8):
+    - BPushSDK/normal (= 1.4.8)
+  - BPushSDK/normal (1.4.8)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - EaseMobSDK (2.3.4)
+  - IQKeyboardManager (6.3.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.2.0)
+  - mob_sharesdk (4.2.6):
+    - mob_sharesdk/ShareSDK (= 4.2.6)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.2.6):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKConfigFile (4.2.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKExtension (4.2.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.2.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo (4.2.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull (4.2.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKUI (4.2.6):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.2.2)
+  - Reachability (3.2)
+  - SDWebImage (5.0.4):
+    - SDWebImage/Core (= 5.0.4)
+  - SDWebImage/Core (5.0.4)
+  - TZImagePickerController (3.2.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.1)
+  - BaiduMapAPI (~> 2.8.1)
+  - BPushSDK (~> 1.4.8)
+  - CocoaLumberjack (~> 3.5.3)
+  - EaseMobSDK (~> 2.3.4)
+  - IQKeyboardManager (~> 6.3.0)
+  - Masonry (~> 1.1.0)
+  - MBProgressHUD (~> 1.1.0)
+  - MJRefresh (~> 3.2.0)
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKConfigFile
+  - mob_sharesdk/ShareSDKExtension
+  - mob_sharesdk/ShareSDKPlatforms/QQ
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull
+  - mob_sharesdk/ShareSDKUI
+  - Reachability (~> 3.2)
+  - SDWebImage (~> 5.0.4)
+  - TZImagePickerController (~> 3.2.1)
+  - YYKit (~> 1.0.9)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - BaiduMapAPI
+    - BPushSDK
+    - CocoaLumberjack
+    - EaseMobSDK
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
+    - Reachability
+    - SDWebImage
+    - TZImagePickerController
+    - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BaiduMapAPI: 2d03e12a51d5c6c49ece555c6bdda8562635cc02
+  BPushSDK: 8e80206155a31c1f0f294c2ceab6f493928623a5
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  EaseMobSDK: 7b49dc48f9185897d6c936b47e3b2fdd3a742c61
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  mob_sharesdk: e993f357a6f1581a956aea16ea142c9de0425bf7
+  MOBFoundation: b5ff4038ddb9a0f06b685b86408f905a10aa147c
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: c739016e4bdf0a4a1f9a04b5e0385395ad63a282
+  TZImagePickerController: bf4c57b98d8707fce41ea6be872414a71c7a8c9d
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 1acd41a80fee406d1f2b55f4bc748291008bee03
+
+COCOAPODS: 1.7.1

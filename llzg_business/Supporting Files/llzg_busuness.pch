@@ -1,0 +1,57 @@
+//
+//  llzg_busuness.pch
+//  llzg_business
+//
+//  Created by llzg on 2019/6/11.
+//  Copyright © 2019 llzg. All rights reserved.
+//
+
+#ifndef llzg_busuness_pch
+#define llzg_busuness_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "UtilsMacros.h"
+#import "URLMacros.h"
+#import "FontAndColorMacros.h"
+#import "ThirdMacros.h"
+#import <SDWebImageManager.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import "RootNavigationController.h"
+
+#import "IQKeyboardManager.h"
+#import <AFNetworking.h>
+#import <MBProgressHUD.h>
+
+
+
+
+
+
+
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
+#define NTES_USE_CLEAR_BAR - (BOOL)useClearBar{return YES;}
+
+#define NTES_FORBID_INTERACTIVE_POP - (BOOL)forbidInteractivePop{return YES;}
+
+
+
+
+
+
+
+
+
+
+#endif
+
+#endif /* llzg_busuness_pch */
