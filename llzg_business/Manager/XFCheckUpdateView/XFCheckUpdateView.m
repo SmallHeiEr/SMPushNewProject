@@ -69,7 +69,7 @@
 #pragma mark -- 相当于初始化赋值
 - (void)initWithTitle:(NSString*)title message:(NSString*)message buttonTitle:(NSString*)buttonTitle andIsForce:(BOOL) isForce
 {
-    self.frame =CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT + 20);
+    self.frame =CGRectMake(0, 0, SCWidth, SCHeight + 20);
     self.buttonTitle = buttonTitle;
     self.title = title;
     self.message = message;
@@ -79,7 +79,7 @@
 
 - (void)initWithNoforceTitle:(NSString*)title message:(NSString*)message buttonTitle:(NSString*)buttonTitle
 {
-    self.frame =CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT + 20);
+    self.frame =CGRectMake(0, 0, SCWidth, SCHeight + 20);
     self.buttonTitle = buttonTitle;
     self.title = title;
     self.message = message;
@@ -173,13 +173,13 @@
         
         UIButton *cancelBtn = [[UIButton alloc]initWithFrame:CGRectMake(0+(width1/2-mBtnWidth)/2, 0, mBtnWidth, mBtnHeight)];
         [cancelBtn  setTitle:@"取消" forState:UIControlStateNormal];
-        cancelBtn.backgroundColor = RGBA_COLOR(36, 193, 64, 1);
+        cancelBtn.backgroundColor = UIColorMMDFromRGB(36, 193, 64, 1);
         cancelBtn.layer.cornerRadius = 5;
         [cancelBtn addTarget:self action:@selector(cancelClick) forControlEvents:UIControlEventTouchUpInside];
         [btnView addSubview:cancelBtn];
 
         UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(width1/2+(width1/2-mBtnWidth)/2, 0, mBtnWidth, mBtnHeight)];
-        btn.backgroundColor = RGBA_COLOR(36, 193, 64, 1);
+        btn.backgroundColor = UIColorMMDFromRGB(36, 193, 64, 1);
         btn.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:17.0f];
         btn.titleLabel.textColor = [UIColor whiteColor];
         [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -197,7 +197,7 @@
     {
         UIView *btnView = [[UIView alloc] initWithFrame:CGRectMake(0, self.mainView.frame.size.height-mHeaderHeight+11, width1, mHeaderHeight)];
         UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake((width1 - mBtnWidth)/2, 0, mBtnWidth, mBtnHeight)];
-        btn.backgroundColor = RGBA_COLOR(36, 193, 64, 1);
+        btn.backgroundColor = UIColorMMDFromRGB(36, 193, 64, 1);
         btn.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:17.0f];
         btn.titleLabel.textColor = [UIColor whiteColor];
         [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];

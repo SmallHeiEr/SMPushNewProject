@@ -56,7 +56,7 @@
         TabBarController *RootVC = [[TabBarController alloc] init];
         self.window.rootViewController = RootVC;
         [self.window makeKeyAndVisible];
-        //        [self setupFirstLaunch:self.window];
+        [self setupFirstLaunch:self.window];
         //
     } else {
         TabBarController *RootVC = [[TabBarController alloc] init];

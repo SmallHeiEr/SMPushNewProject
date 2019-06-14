@@ -71,10 +71,7 @@
 #define MYHeight(height) ((height)*(IsIPHONEX?((SCHeight- 24 - 34)/667):(SCHeight / 667)))
 #define navigationAppHeight (([UIApplication sharedApplication].statusBarFrame.size.height + self.navigationController.navigationBar.frame.size.height))
 #define tabBarheight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
-//获取设备的物理高度
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-//获得设备的物理宽度
-#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+
 
 
 #endif /* UtilsMacros_h */

@@ -64,7 +64,7 @@
 
     [self layoutTitleLabel];
     
-    CGRect descLabelFrame = CGRectMake(20, self.bounds.size.height - self.descPositionY, self.contentView.frame.size.width - 40, 500);
+    CGRect descLabelFrame = CGRectMake(MYWidth(20), self.bounds.size.height - self.descPositionY, self.contentView.frame.size.width - MYWidth(40), MYHeight(500));
     self.descLabel.frame = descLabelFrame;
     
     
@@ -76,16 +76,16 @@
     
     if ([self.title respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
         NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:self.title attributes:@{ NSFontAttributeName: self.titleFont }];
-        CGRect rect = [attributedText boundingRectWithSize:(CGSize){self.contentView.frame.size.width - 20, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+        CGRect rect = [attributedText boundingRectWithSize:(CGSize){self.contentView.frame.size.width - MYWidth(20), CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
         titleHeight = ceilf(rect.size.height);
     } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        titleHeight = [self.title sizeWithFont:self.titleFont constrainedToSize:CGSizeMake(self.contentView.frame.size.width - 20, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping].height;
+        titleHeight = [self.title sizeWithFont:self.titleFont constrainedToSize:CGSizeMake(self.contentView.frame.size.width - MYWidth(20), CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping].height;
 #pragma clang diagnostic pop
     }
     
-    CGRect titleLabelFrame = CGRectMake(10, self.bounds.size.height - self.titlePositionY, self.contentView.frame.size.width - 20, titleHeight);
+    CGRect titleLabelFrame = CGRectMake(MYWidth(10), self.bounds.size.height - self.titlePositionY, self.contentView.frame.size.width - MYWidth(20), titleHeight);
 
     self.titleLabel.frame = titleLabelFrame;
 }
@@ -113,7 +113,7 @@
     UIView *pageView = [[UIView alloc] initWithFrame:self.contentView.bounds];
     
     if (self.titleImageView == nil) {
-        UIImageView *titleImageView = self.titleImage != nil ? [[UIImageView alloc] initWithImage:self.titleImage] : [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 128, 128)];
+        UIImageView *titleImageView = self.titleImage != nil ? [[UIImageView alloc] initWithImage:self.titleImage] : [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, MYWidth(128), MYHeight(128))];
         self.titleImageView = titleImageView;
     }
     [pageView addSubview:self.titleImageView];
@@ -148,7 +148,7 @@
 
         self.skipButton = button;
         
-        self.skipButton.frame = CGRectMake(70,SCREEN_HEIGHT -100*(SCREEN_WIDTH/375), SCREEN_WIDTH - 140, 40);
+        self.skipButton.frame = CGRectMake(MYWidth(70),SCHeight -MYHeight(100), SCWidth - MYWidth(140), MYHeight(40));
         self.skipButton.backgroundColor = [UIColor clearColor];
         [self.skipButton setTitle:@"开始体验" forState:UIControlStateNormal];
         self.skipButton.backgroundColor = UIColorMMDFromRGB(225, 64, 143, 1.0);

@@ -727,6 +727,7 @@
 			baseConfigurationReference = 76D458D89410268745125DB8 /* Pods-llzg_business.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3ND85ZNZJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -748,6 +749,7 @@
 			baseConfigurationReference = A36A7220A8B1CC6C5F8538DD /* Pods-llzg_business.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3ND85ZNZJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

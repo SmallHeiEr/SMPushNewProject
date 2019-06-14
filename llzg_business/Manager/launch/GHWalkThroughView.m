@@ -121,7 +121,7 @@
             self.pageControl.transform = CGAffineTransformRotate(self.pageControl.transform, -M_PI_2);
             self.pageControl.frame = CGRectMake(0, self.bounds.size.height - 60, self.bounds.size.width, 20);
             
-            self.skipButton.frame = CGRectMake(self.bounds.size.width - 80 * (SCREEN_WIDTH/375), self.pageControl.frame.origin.y - ((30 - self.pageControl.frame.size.height)/2), 80, 30);
+            self.skipButton.frame = CGRectMake(self.bounds.size.width - MYWidth(80), self.pageControl.frame.origin.y - ((30 - self.pageControl.frame.size.height)/2), 80, 30);
             self.skipButton.backgroundColor = UIColorMMDFromRGB(225, 64, 143, 1.0);
 //            [self.skipButton setImage:LoadCacheImage(@"开始体验") forState:UIControlStateNormal];
 

@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define SCREEN_WIDTH    [[UIScreen mainScreen] bounds].size.width
-#define SCREEN_HEIGHT   [[UIScreen mainScreen] bounds].size.height
-#define RGBA_COLOR(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
 
 static const CGFloat width1 = 300;//宽度
